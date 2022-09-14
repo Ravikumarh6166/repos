@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	 <display-name>Crudservlet</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list> 
+	
+	<servlet-mapping>
+		<servlet-name>Saveservlet</servlet-name>
+		<url-pattern>/saveServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaveServlet</servlet-name>
+		<servlet-class>com.org.crud.SaveServlet</servlet-class>
+	</servlet>
+	<!--  -->
+	
+    <servlet-mapping>
+		<servlet-name>EditServlet2</servlet-name>
+		<url-pattern>/EditServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EditServlet2</servlet-name>
+		<servlet-class>com.org.crud.EditServlet2</servlet-class>
+	</servlet>
+    <!--  -->
+    
+    <servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.org.crud.DeleteServlet</servlet-class>
+		</servlet>
+		 <!--  -->
+		 
+	 <servlet-mapping>
+		<servlet-name>ViewServlet</servlet-name>
+		<url-pattern>/ViewServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewServlet</servlet-name>
+		<servlet-class>com.org.crud.ViewServlet</servlet-class>	 
+	</servlet>
+</web-app>
